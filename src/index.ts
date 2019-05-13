@@ -5,7 +5,7 @@ export function RGBtoHEX(rgb: string) {
   } else {
     const rgbArr: any = rgb.match(/\d/g);
     const hexArr = rgbArr.map((r: string) => {
-      const hexString: any = parseInt(r, 2).toString(16);
+      const hexString: any = parseInt(r, 10).toString(16);
       return hexString.padStart(2, '0');
     });
 
