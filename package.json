@@ -1,0 +1,43 @@
+{
+    "name": "typescript-color-converter",
+    "version": "0.0.1",
+    "description": "it is used to convert rgb to hex and vice versa",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+        "lint": "tslint -p tsconfig.json",
+        "prepare": "npm run build",
+        "preversion": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "postversion": "git push && git push --tags"
+    },
+    "author": "joshuvageorge03@gmail.com",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoshuvaGeorge03/color-converter.git"
+    },
+    "bugs": {
+        "email": "joshuvageorge03@gmail.com",
+        "url": "https://github.com/JoshuvaGeorge03/color-converter.git/issues"
+    },
+    "homepage": "https://github.com/JoshuvaGeorge03/color-converter.git#readme",
+    "keywords": [
+        "color-converter",
+        "typescript color converter",
+        "RGB to Hex"
+    ],
+    "licenses": [],
+    "devDependencies": {
+        "prettier": "^1.17.0",
+        "tslint": "^5.16.0",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.4.5"
+    },
+    "files": [
+        "lib/**/*"
+    ]
+}
